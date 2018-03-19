@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Lato:300i");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,900");
+@import url("https://fonts.googleapis.com/css?family=Heebo:400,900");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Lato; }
+
+.red-line {
+  width: 200px;
+  height: 2px;
+  background-color: #ed145b;
+  margin: 40px auto; }
+
+.btn-default {
+  margin-top: 60px;
+  width: 200px;
+  height: 50px;
+  background-color: #ed145b;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700; }
+  .btn-default:hover {
+    color: #ed145b;
+    background-color: #fff; }
+
+nav {
+  color: #fff; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right; }
+  nav .logo {
+    font-family: Heebo;
+    font-size: 25px;
+    float: left;
+    font-weight: 900;
+    cursor: pointer; }
+  nav .slash {
+    color: #ed145b;
+    letter-spacing: 3px; }
+  nav li {
+    display: inline-block; }
+    nav li:hover a {
+      color: #ed145b;
+      text-decoration: none; }
+  nav a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0 5px; }
+
+main {
+  background: url("https://i.imgur.com/1MNlkoV.png");
+  background-position: center;
+  background-size: cover;
+  height: 800px; }
+  main span {
+    font-weight: 900;
+    color: #fff; }
+  main .slogan {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 46px;
+    font-weight: 300; }
+  main .hero-text {
+    color: #fff;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px; }
+  main .btn-default {
+    padding-top: 15px; }
+
+.about {
+  font-weight: 300; }
+  .about h1 {
+    font-style: italic;
+    font-size: 38px; }
+  .about .red-line {
+    margin: 35px 0 45px 0; }
+  .about p {
+    line-height: 30px;
+    font-size: 15px; }
+  .about a {
+    font-size: 15px;
+    color: #ed145b;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400; }
+    .about a:hover {
+      text-decoration: underline; }
+  .about span {
+    padding: 15px; }
+    .about span::after {
+      content: '';
+      background: rgba(0, 0, 0, 0);
+      position: absolute;
+      width: 27px;
+      height: 27px;
+      border: 1px solid #ed145b;
+      border-radius: 50%;
+      top: 8px;
+      left: 8px; }
+
+/*# sourceMappingURL=style.css.map */
