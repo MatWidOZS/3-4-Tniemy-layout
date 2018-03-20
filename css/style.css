@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Lato:300i");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,900");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
 * {
   box-sizing: border-box; }
 
 body {
   margin: 0;
-  font-family: Lato; }
+  font-family: Lato;
+  background-color: #f4f4f4; }
 
 .red-line {
   width: 200px;
@@ -25,10 +25,18 @@ body {
   border-radius: 25px;
   text-transform: uppercase;
   font-size: 15px;
-  font-weight: 700; }
+  font-weight: 700;
+  transition: 0.4s; }
   .btn-default:hover {
     color: #ed145b;
-    background-color: #fff; }
+    background-color: #fff;
+    transform: scale(1.1); }
+
+p {
+  line-height: 30px;
+  font-size: 15px;
+  color: #5a5a5a;
+  font-weight: 400; }
 
 nav {
   color: #fff; }
@@ -40,30 +48,52 @@ nav {
   nav .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
+    color: #fff;
     float: left;
     font-weight: 900;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 0.4s; }
+    nav .logo:hover {
+      color: #ed145b;
+      transform: scale(1.1); }
   nav .slash {
     color: #ed145b;
     letter-spacing: 3px;
     font-family: Lato; }
   nav li {
     display: inline-block; }
-    nav li:hover a {
-      color: #ed145b;
-      text-decoration: none; }
   nav a {
     font-size: 16px;
     color: #fff;
     text-decoration: none;
     font-weight: 700;
     padding: 0 15px;
+    position: relative;
     transition: 0.4s; }
+    nav a:before {
+      content: '';
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      background-color: #ed145b;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.4s ease-in-out 0s; }
+    nav a:hover {
+      color: #ed145b;
+      text-decoration: none; }
+    nav a:hover:before {
+      visibility: visible;
+      transform: scaleX(1); }
 
 main {
-  background: url("https://i.imgur.com/1MNlkoV.png");
+  background: url("../images/background-image.png");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   position: relative; }
   main span {
@@ -86,6 +116,15 @@ main {
     margin: 40px auto; }
   main .btn-default {
     padding-top: 15px; }
+  main:before {
+    content: '';
+    position: absolute;
+    height: 78px;
+    width: 99.1vw;
+    background: #f4f4f4;
+    bottom: -30px;
+    left: 0;
+    z-index: -2; }
   main:after {
     content: '';
     z-index: -1;
@@ -99,33 +138,42 @@ main {
 
 .about {
   font-weight: 300; }
+  .about [class*="col"] {
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    position: relative; }
   .about h1 {
     font-style: italic;
     font-size: 38px; }
   .about .red-line {
     margin: 35px 0 45px 0; }
-  .about p {
-    line-height: 30px;
-    font-size: 15px; }
   .about a {
+    display: inline-block;
+    margin-top: 15px;
     font-size: 15px;
     color: #ed145b;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 400; }
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: 0.4s; }
     .about a:hover {
-      text-decoration: underline; }
+      text-decoration: underline;
+      transform: scale(1.1); }
   .about span {
     padding: 15px; }
-    .about span::after {
+    .about span:after {
       content: '';
       background: rgba(0, 0, 0, 0);
       position: absolute;
-      width: 27px;
-      height: 27px;
+      width: 30px;
+      height: 30px;
       border: 1px solid #ed145b;
       border-radius: 50%;
-      top: 8px;
-      left: 8px; }
+      top: 7px;
+      left: 7px; }
+  .about .mac {
+    position: absolute;
+    left: 0; }
 
 /*# sourceMappingURL=style.css.map */
