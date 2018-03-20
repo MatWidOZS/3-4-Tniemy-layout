@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,900");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
 * {
@@ -175,5 +175,32 @@ main {
   .about .mac {
     position: absolute;
     left: 0; }
+
+.services {
+  background-color: #fff;
+  padding-top: 150px; }
+  .services h1 {
+    font-weight: 400;
+    font-style: italic; }
+  .services .red-line {
+    margin: 40px auto; }
+  .services .services-icons {
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 120px; }
+  .services .icon {
+    background: none;
+    margin-bottom: 20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    transition: 0.4s; }
+    .services .icon:hover {
+      transform: scale(1.1); }
+  .services h2 {
+    color: #ed145b;
+    font-size: 18px;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
