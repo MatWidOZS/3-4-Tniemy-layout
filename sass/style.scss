@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Lato:300i');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,900');
-@import url('https://fonts.googleapis.com/css?family=Heebo:400,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
 
 * {box-sizing: border-box;}
 
@@ -18,7 +18,7 @@ body {
 	width: 200px;
 	height: 2px;
 	background-color: $mache-pink;
-	margin: 40px auto;
+	margin: 0 auto;
 }
 
 .btn-default {
@@ -48,7 +48,7 @@ nav {
 	}
 	
 	.logo {
-		font-family: Heebo;
+		font-family: 'Raleway', sans-serif;
 		font-size: 25px;
 		float: left;
 		font-weight: 900;
@@ -58,6 +58,7 @@ nav {
 	.slash {
 		color: $mache-pink;
 		letter-spacing: 3px;
+		font-family: Lato;
 	}
 	
 	li {
@@ -73,7 +74,8 @@ nav {
 		color: $white-text;
 		text-decoration: none;
 		font-weight: 700;
-		padding: 0 5px;
+		padding: 0 15px;
+		transition: 0.4s;
 	}
 }
 
@@ -81,7 +83,8 @@ main {
 	background: url("https://i.imgur.com/1MNlkoV.png");
 	background-position: center;
 	background-size: cover;
-	height: 800px;
+	height: 100vh;
+	position: relative;
 		
 	span {
 		font-weight: 900;
@@ -93,6 +96,8 @@ main {
 		text-transform: uppercase;
 		font-size: 46px;
 		font-weight: 300;
+		margin-top: 25vh;
+		letter-spacing: 1.15px;
 	}
 	
 	.hero-text {
@@ -100,10 +105,27 @@ main {
 		font-weight: 300;
 		font-size: 22px;
 		line-height: 38px;
+		letter-spacing: 0.55px;
+	}
+
+	.hero-line {
+		margin: 40px auto;
 	}
 	
 	.btn-default {
 		padding-top: 15px;
+	}
+
+	&:after {
+		content: '';
+		z-index: -1;
+		width: 99vw;
+		height: 78px;
+		background: $mache-pink;
+		bottom: -20px;
+		left: 0;
+		transform: rotate(-1deg);
+		position: absolute;
 	}
 }
 

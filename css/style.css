@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://fonts.googleapis.com/css?family=Lato:300i");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,900");
-@import url("https://fonts.googleapis.com/css?family=Heebo:400,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,900");
 * {
   box-sizing: border-box; }
 
@@ -13,7 +13,7 @@ body {
   width: 200px;
   height: 2px;
   background-color: #ed145b;
-  margin: 40px auto; }
+  margin: 0 auto; }
 
 .btn-default {
   margin-top: 60px;
@@ -38,14 +38,15 @@ nav {
     list-style-type: none;
     float: right; }
   nav .logo {
-    font-family: Heebo;
+    font-family: 'Raleway', sans-serif;
     font-size: 25px;
     float: left;
     font-weight: 900;
     cursor: pointer; }
   nav .slash {
     color: #ed145b;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    font-family: Lato; }
   nav li {
     display: inline-block; }
     nav li:hover a {
@@ -56,13 +57,15 @@ nav {
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    padding: 0 5px; }
+    padding: 0 15px;
+    transition: 0.4s; }
 
 main {
   background: url("https://i.imgur.com/1MNlkoV.png");
   background-position: center;
   background-size: cover;
-  height: 800px; }
+  height: 100vh;
+  position: relative; }
   main span {
     font-weight: 900;
     color: #fff; }
@@ -70,14 +73,29 @@ main {
     color: #fff;
     text-transform: uppercase;
     font-size: 46px;
-    font-weight: 300; }
+    font-weight: 300;
+    margin-top: 25vh;
+    letter-spacing: 1.15px; }
   main .hero-text {
     color: #fff;
     font-weight: 300;
     font-size: 22px;
-    line-height: 38px; }
+    line-height: 38px;
+    letter-spacing: 0.55px; }
+  main .hero-line {
+    margin: 40px auto; }
   main .btn-default {
     padding-top: 15px; }
+  main:after {
+    content: '';
+    z-index: -1;
+    width: 99vw;
+    height: 78px;
+    background: #ed145b;
+    bottom: -20px;
+    left: 0;
+    transform: rotate(-1deg);
+    position: absolute; }
 
 .about {
   font-weight: 300; }
