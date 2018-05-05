@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
 
@@ -8,6 +8,14 @@ $mache-pink: #ed145b;
 $white-text: #fff;
 $h1: 38px;
 $text-color: #5a5a5a;
+
+@mixin header-1 {
+	font-style: italic;
+	font-weight: 400;
+	font-size: $h1;
+	letter-spacing: 0.95px;
+	color: $text-color;
+}
 
 body {
 	margin: 0;
@@ -37,6 +45,7 @@ body {
 	&:hover {
 		color: $mache-pink;
 		background-color: #fff;
+		border: 2px solid $mache-pink;
 		transform: scale(1.1);
 	}
 }
@@ -47,7 +56,7 @@ p {
 	color: $text-color;
 	font-weight: 400;
 }
-
+//NAV
 nav {
 	color: $white-text;	
 	ul {
@@ -112,7 +121,7 @@ nav {
 
 	}
 }
-
+//JUMBOTRON
 main {
 	background: url('../images/background-image.png');
 	background-position: center;
@@ -175,7 +184,7 @@ main {
 		position: absolute;
 	}
 }
-
+//ABOUT
 .about {
 	font-weight: 300;
 
@@ -186,8 +195,7 @@ main {
 	}
 
 	h1 {
-		font-style: italic;
-		font-size: $h1;
+		@include header-1;
 	}
 	
 	.red-line {
@@ -231,13 +239,13 @@ main {
 	}
 }
 
+//SERVICES
 .services {
 	background-color: #fff;
 	padding-top: 150px;
 
 	h1 {
-		font-weight: 400;
-		font-style: italic;
+		@include header-1;
 	}
 	
 	.red-line {
@@ -270,6 +278,7 @@ main {
 	}
 }
 
+//QUOTES
 .quote {
 	background: url('../images/background-image.png');
 	min-height: 50vh;
@@ -311,6 +320,91 @@ main {
 
 		.glyphicon-menu-right {
 			margin-right: 10vw;
+		}
+	}
+}
+
+//PRICES
+.prizes {
+	margin-top: 140px;
+	max-width: 1200px; 
+
+	h1 {
+		@include header-1;
+	}
+	
+	.red-line {
+		margin: 40px auto; 
+	}
+
+	.col-xs-3 {
+		margin-top: 60px;
+		width: 262px;
+		margin-right: 25px;
+		margin-bottom: 140px;
+		&:hover .top {
+			background-color: $mache-pink;
+			transition: .4s;
+		}
+
+		.top {
+			background-color: #5a5a5a;
+			height: 135px;
+			position: relative;
+			p {
+				padding-top: 33px;
+				color: #fff;
+				font-size: 20px;
+				font-weight: 700;
+				line-height: 22px;
+
+				.value {
+					font-size: 50px;
+				}
+				.month {
+					font-size: 15px;
+				}
+			}
+			.plan {
+				position: absolute;
+				color: $text-color;
+				font-weight: 700;
+				background-color: #f4f4f4;
+				width: 200px;
+				height: 50px;
+				border: none;
+				border-radius: 25px;
+				text-align: center;
+				line-height: 50px;
+				left: 16px;
+				bottom: -25px;
+			}
+		}
+
+		.bottom {
+			background-color: #fff;
+			padding-top: 45px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			flex-wrap: nowrap;
+
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				color: &text-color;
+				font-size: 15px;
+
+				li {
+					padding-top: 15px;
+				}
+			}
+
+			.btn-default {
+				margin: 35px auto;
+			}
 		}
 	}
 }

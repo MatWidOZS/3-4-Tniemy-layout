@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
 * {
@@ -30,6 +30,7 @@ body {
   .btn-default:hover {
     color: #ed145b;
     background-color: #fff;
+    border: 2px solid #ed145b;
     transform: scale(1.1); }
 
 p {
@@ -144,7 +145,10 @@ main {
     position: relative; }
   .about h1 {
     font-style: italic;
-    font-size: 38px; }
+    font-weight: 400;
+    font-size: 38px;
+    letter-spacing: 0.95px;
+    color: #5a5a5a; }
   .about .red-line {
     margin: 35px 0 45px 0; }
   .about a {
@@ -180,8 +184,11 @@ main {
   background-color: #fff;
   padding-top: 150px; }
   .services h1 {
+    font-style: italic;
     font-weight: 400;
-    font-style: italic; }
+    font-size: 38px;
+    letter-spacing: 0.95px;
+    color: #5a5a5a; }
   .services .red-line {
     margin: 40px auto; }
   .services .services-icons {
@@ -234,5 +241,70 @@ main {
       margin-left: 10vw; }
     .quote .carousel-control .glyphicon-menu-right {
       margin-right: 10vw; }
+
+.prizes {
+  margin-top: 140px;
+  max-width: 1200px; }
+  .prizes h1 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 38px;
+    letter-spacing: 0.95px;
+    color: #5a5a5a; }
+  .prizes .red-line {
+    margin: 40px auto; }
+  .prizes .col-xs-3 {
+    margin-top: 60px;
+    width: 262px;
+    margin-right: 25px;
+    margin-bottom: 140px; }
+    .prizes .col-xs-3:hover .top {
+      background-color: #ed145b;
+      transition: .4s; }
+    .prizes .col-xs-3 .top {
+      background-color: #5a5a5a;
+      height: 135px;
+      position: relative; }
+      .prizes .col-xs-3 .top p {
+        padding-top: 33px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 22px; }
+        .prizes .col-xs-3 .top p .value {
+          font-size: 50px; }
+        .prizes .col-xs-3 .top p .month {
+          font-size: 15px; }
+      .prizes .col-xs-3 .top .plan {
+        position: absolute;
+        color: #5a5a5a;
+        font-weight: 700;
+        background-color: #f4f4f4;
+        width: 200px;
+        height: 50px;
+        border: none;
+        border-radius: 25px;
+        text-align: center;
+        line-height: 50px;
+        left: 16px;
+        bottom: -25px; }
+    .prizes .col-xs-3 .bottom {
+      background-color: #fff;
+      padding-top: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: nowrap; }
+      .prizes .col-xs-3 .bottom ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: .prizes .col-xs-3 .bottom ul text-color;
+        font-size: 15px; }
+        .prizes .col-xs-3 .bottom ul li {
+          padding-top: 15px; }
+      .prizes .col-xs-3 .bottom .btn-default {
+        margin: 35px auto; }
 
 /*# sourceMappingURL=style.css.map */
