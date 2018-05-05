@@ -269,3 +269,48 @@ main {
 		text-transform: uppercase;
 	}
 }
+
+.quote {
+	background: url('../images/background-image.png');
+	min-height: 50vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.quote-open {
+		margin-top: 60px;	//add to media queries?
+		margin-bottom: 45px;
+	}
+
+	.quote-close {
+		margin-top: 45px;
+		margin-bottom: 60px;	//add to media queries?
+	}
+
+	p {
+		color: #fff;
+		font-size: 25px;
+		font-style: italic;
+		font-weight: 400;
+		line-height: 40px;
+		letter-spacing: 0.63px;
+	}
+
+	.carousel-control {
+		background: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 33px;
+
+		.glyphicon-menu-left {
+			margin-left: 10vw;
+		}
+
+		.glyphicon-menu-right {
+			margin-right: 10vw;
+		}
+	}
+}

@@ -203,4 +203,36 @@ main {
     font-size: 18px;
     text-transform: uppercase; }
 
+.quote {
+  background: url("../images/background-image.png");
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .quote .quote-open {
+    margin-top: 60px;
+    margin-bottom: 45px; }
+  .quote .quote-close {
+    margin-top: 45px;
+    margin-bottom: 60px; }
+  .quote p {
+    color: #fff;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.63px; }
+  .quote .carousel-control {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 33px; }
+    .quote .carousel-control .glyphicon-menu-left {
+      margin-left: 10vw; }
+    .quote .carousel-control .glyphicon-menu-right {
+      margin-right: 10vw; }
+
 /*# sourceMappingURL=style.css.map */
